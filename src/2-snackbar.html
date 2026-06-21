@@ -39,7 +39,47 @@
                     <span class="main-title-gradient">Welcome</span> to Snackbar
                 </h1>
                 <a class="back-link" href="./index.html">Go back</a>
-                <ul class="gallery"></ul>
+                <form class="form">
+                    <label class="form-label">
+                        Delay (ms)
+                        <input
+                            class="form-input"
+                            type="number"
+                            name="delay"
+                            required
+                        />
+                    </label>
+
+                    <fieldset class="form-fieldset">
+                        <legend class="fieldset-legend">State</legend>
+                        <div class="fieldset-wrapper">
+                            <label class="fieldset-label">
+                                <input
+                                    class="fieldset-input"
+                                    type="radio"
+                                    name="state"
+                                    value="fulfilled"
+                                    required
+                                />
+                                Fulfilled
+                            </label>
+                            <label class="fieldset-label">
+                                <input
+                                    class="fieldset-input"
+                                    type="radio"
+                                    name="state"
+                                    value="rejected"
+                                    required
+                                />
+                                Rejected
+                            </label>
+                        </div>
+                    </fieldset>
+
+                    <button class="submit-button" type="submit">
+                        Create notification
+                    </button>
+                </form>
             </div>
         </main>
         <script type="module" src="./js/2-snackbar.js"></script>
